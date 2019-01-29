@@ -81,3 +81,19 @@ deploy:
   type: git
   repo: https://github.com/tyxxzjpdez/myblog.git
   branch: gh-pages
+
+# 实现全站及文章字数统计及阅读时长
+## Docs: https://www.lixint.me/hexo-theme-diy.html
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+
+# 增加本地搜索功能
+## Docs: https://www.lixint.me/hexo-theme-diy.html
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
