@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>张钊杰的博客</title>
   
-  
+  <subtitle>Talk is cheap, show me the code!</subtitle>
   <link href="/myblog/atom.xml" rel="self"/>
   
   <link href="https://tyxxzjpdez.github.io/myblog/"/>
