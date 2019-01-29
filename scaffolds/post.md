@@ -7,3 +7,5 @@ photo:
 ---
 {% note default %}
 {% endnote %}
+
+<!-- more -->
