@@ -1,6 +1,7 @@
 ---
 title: Hello World
 date: 2019-01-29 22:40:30
+sticky: 1
 tags:
   - Markdown
 categories:
