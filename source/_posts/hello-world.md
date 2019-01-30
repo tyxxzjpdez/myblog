@@ -1,9 +1,12 @@
 ---
 title: Hello World
 date: 2019-01-29 22:40:30
-tags: Markdown
-categories: Hexo
-photo: https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1978020309,235423315&fm=26&gp=0.jpg
+tags:
+  - Markdown
+categories:
+  - Hexo
+photos: 
+  - https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1978020309,235423315&fm=26&gp=0.jpg
 ---
 
 {% note default %}
