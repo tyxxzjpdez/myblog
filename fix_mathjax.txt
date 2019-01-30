@@ -1,0 +1,26 @@
+https://blog.csdn.net/wgshun616/article/details/81019687
+
+$ npm uninstall hexo-renderer-marked --save
+$ npm install hexo-renderer-kramed --save
+
+node_modules\kramed\lib\rules\inline.js
+
+//escape: /^\\([\\`*{}\[\]()#$+\-.!_>])/,
+  escape: /^\\([`*\[\]()#$+\-.!_>])/,
+//em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,
+  em: /^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,
+
+__config.yml
+# Math Equations Render Support
+math:
+  enable: true
+
+  # Default(true) will load mathjax/katex script on demand
+  # That is it only render those page who has 'mathjax: true' in Front Matter.
+  # If you set it to false, it will load mathjax/katex srcipt EVERY PAGE.
+  per_page: true
+
+  engine: mathjax
+  #engine: katex
+
+
