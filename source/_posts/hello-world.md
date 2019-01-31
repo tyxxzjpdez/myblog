@@ -8,7 +8,7 @@ tags:
 categories:
   - Hexo
 photos: 
-  - https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548937469336&di=0d29b88d4ddac9456bb9ba581f78da35&imgtype=0&src=http%3A%2F%2Fimglf2.ph.126.net%2FFbw3toQZwfqEZwkMlG6opw%3D%3D%2F6608865327399056144.jpg
+  - /images/Local-Gallery/hello-world.jpg
 ---
 
 {% note default %}
@@ -22,10 +22,10 @@ photos:
 ### Create a new post
 
 {% note default no-icon %}
-    $x \bigodot y$
-    $\overrightarrow{xy}$
-    $\overline a$
-    $\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$
+    $$x \bigodot y$$
+    $$\overrightarrow{xy}$$
+    $$\overline a$$
+    $$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$$
     $$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$$
     $$\begin{bmatrix}
         {a_{11}}&{a_{12}}&{\cdots}&{a_{1n}}\\
