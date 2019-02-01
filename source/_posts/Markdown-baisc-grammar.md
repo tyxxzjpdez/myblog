@@ -1,19 +1,20 @@
 ---
-title: 你好，初次见面！
+title: Markdown基本语法
 date: 2019-01-29 22:40:30
 sticky: 0
 mathjax: true
 tags:
   - Markdown
 categories:
-  - Hexo
+  - 博文书写规范
 photos: 
-  - /images/Local-Gallery/hello-world.jpg
+  - /images/Local-Gallery/markdown.jpg
 ---
 
-{% note default %}
-    Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
-{% endnote %}
+{% cq %}
+    第一篇正式博客，因为对Markdown语法不熟悉，就打算专门写个关于Markdown语法的博客
+    **注意：本博客仅仅是总结其他博客的用法，末尾会给出所有的链接**
+{% endcq %}
 
 <!-- more -->
 
@@ -22,11 +23,6 @@ photos:
 ### Create a new post
 
 {% note default no-icon %}
-    $$x \bigodot y$$
-    $$\overrightarrow{xy}$$
-    $$\overline a$$
-    $$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$$
-    $$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$$
     $$\begin{bmatrix}
         {a_{11}}&{a_{12}}&{\cdots}&{a_{1n}}\\
         {a_{21}}&{a_{22}}&{\cdots}&{a_{2n}}\\
