@@ -2033,7 +2033,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4fa611;
+  background: #858a3e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3344,4 +3344,14 @@ ul.breadcrumb li+li:last-child {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+}
+.post-body p a {
+  color: #43aede;
+  border-bottom: none;
+  border-bottom: 1px solid #43aede;
+}
+.post-body p a:hover {
+  color: #fc6423;
+  border-bottom: none;
+  border-bottom: 1px solid #fc6423;
 }
