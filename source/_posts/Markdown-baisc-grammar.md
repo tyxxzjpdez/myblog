@@ -167,7 +167,7 @@ Markdown
         代码块（左侧有八个不可见的空格）
 ```
 **显示效果：**
-经过试验，在hexo下并不支持定义型列表，但是此处只能贴一张效果图：
+经过试验，在hexo下并不支持定义型列表，所以此处只能贴一张效果图：
 ![效果图](/myblog/images/Local-Gallery/markdown-definitionList.png "定义型列表")
 
 ### 字体颜色与字体背景颜色
