@@ -106,7 +106,7 @@ sudo pip3 install thefuck
 > This is a clean-room implementation of the Fish shell's history search feature, where you can type in any part of any command from history and then press chosen keys, such as the UP and DOWN arrows, to cycle through matches.
 
 配置方法：
-由于oh-my-zsh已经内置了该插件，直接在`~/.zshrc`中的`plugins`加入`history-substring-search`这一项就好
+由于oh-my-zsh已经内置了该插件，直接在`~/.zshrc`中的`plugins`加入`history-substring-search`这一项就好（注意位置，放在zsh-syntax-highlighing后面）
 
 ## autojump
 
