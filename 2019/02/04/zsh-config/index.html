@@ -144,7 +144,7 @@
 <meta property="og:description" content="昨天实在是嫌shell找东西老实要不停cd，ls太麻烦,就去网上找找有没有什么高效的办法，结果一查，没想到我用的zsh只要配置一下插件就可以。然后趁着这功夫，我特意找了找zsh上的其他有用插件，结果时间花了不少，但收获也不少。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://tyxxzjpdez.github.io/images/Local-Gallery/oh-my-zsh.png">
-<meta property="og:updated_time" content="2019-02-05T10:41:56.349Z">
+<meta property="og:updated_time" content="2019-02-05T12:22:17.870Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="zsh的安装与相关配置">
 <meta name="twitter:description" content="昨天实在是嫌shell找东西老实要不停cd，ls太麻烦,就去网上找找有没有什么高效的办法，结果一查，没想到我用的zsh只要配置一下插件就可以。然后趁着这功夫，我特意找了找zsh上的其他有用插件，结果时间花了不少，但收获也不少。">
@@ -502,7 +502,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-05 18:41:56" itemprop="dateModified" datetime="2019-02-05T18:41:56+08:00">2019-02-05</time>
+                <time title="修改时间：2019-02-05 20:22:17" itemprop="dateModified" datetime="2019-02-05T20:22:17+08:00">2019-02-05</time>
               
             
           </span>
@@ -600,7 +600,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/myblog/images/Local-Gallery/oh-my-zsh.png" rel="gallery_cjrrn03z30001fcrw89n8esbm" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="/myblog/images/Local-Gallery/oh-my-zsh.png" rel="gallery_cjrrwwv9f0001rsrwgs0ryp0x" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="/myblog/images/Local-Gallery/oh-my-zsh.png" itemprop="contentUrl">
               </a>
             
@@ -667,11 +667,19 @@
 <p>autojump is a faster way to navigate your filesystem. It works by maintaining a database of the directories you use the most from the command line.</p>
 </blockquote>
 <p>配置方法：<br>具体配置方法，可以去<a href="https://github.com/wting/autojump" target="_blank" rel="noopener">官网</a>，这里只说明我自己做过的配置方法，我是使用手动git代码仓库安装的：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git://github.com/wting/autojump.git</span><br><span class="line"><span class="built_in">cd</span> autojump</span><br><span class="line">./install.py`</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git://github.com/wting/autojump.git</span><br><span class="line"><span class="built_in">cd</span> autojump</span><br><span class="line">./install.py</span><br></pre></td></tr></table></figure>
 <p>然后系统提示将如下代码放在<code>~/.zshrc</code>中</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[[ -s /home/tyxxzjpdez/.autojump/etc/profile.d/autojump.sh ]] &amp;&amp; <span class="built_in">source</span> /home/tyxxzjpdez/.autojump/etc/profile.d/autojump.sh</span><br><span class="line"><span class="built_in">autoload</span> -U compinit &amp;&amp; compinit -u</span><br></pre></td></tr></table></figure>
 <p>第一句代码的意思很显然，对于第二句代码，经过翻看<a href="http://zsh.sourceforge.net/Doc/Release/Completion-System.html#Use-of-compinit" target="_blank" rel="noopener">参考</a>,还有部分源码以及<code>~/.oh-my-zsh/oh-my-zsh.sh</code>中代码，我认为第一句必需，第二句可以省略。</p>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://blog.csdn.net/qq_14824885/article/details/81098091" target="_blank" rel="noopener">Dom_留声机’s Blog</a><br><a href="https://www.cnblogs.com/mitnick/p/6270384.html" target="_blank" rel="noopener">askDing’s Blog</a><br><a href="https://github.com/nvbn/thefuck" target="_blank" rel="noopener">github-thefuck</a><br><a href="https://github.com/zsh-users/zsh-autosuggestions" target="_blank" rel="noopener">github-zsh-autosuggestions</a><br><a href="https://github.com/zsh-users/zsh-syntax-highlighting" target="_blank" rel="noopener">github-zsh-syntax-highlighting</a><br><a href="https://github.com/zsh-users/zsh-history-substring-search" target="_blank" rel="noopener">github-zsh-history-substring-search</a><br><a href="https://github.com/wting/autojump" target="_blank" rel="noopener">github-autojump</a></p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ul>
+<li><a href="https://blog.csdn.net/qq_14824885/article/details/81098091" target="_blank" rel="noopener">Dom_留声机’s Blog</a></li>
+<li><a href="https://www.cnblogs.com/mitnick/p/6270384.html" target="_blank" rel="noopener">askDing’s Blog</a></li>
+<li><a href="https://github.com/nvbn/thefuck" target="_blank" rel="noopener">github-thefuck</a></li>
+<li><a href="https://github.com/zsh-users/zsh-autosuggestions" target="_blank" rel="noopener">github-zsh-autosuggestions</a></li>
+<li><a href="https://github.com/zsh-users/zsh-syntax-highlighting" target="_blank" rel="noopener">github-zsh-syntax-highlighting</a></li>
+<li><a href="https://github.com/zsh-users/zsh-history-substring-search" target="_blank" rel="noopener">github-zsh-history-substring-search</a></li>
+<li><a href="https://github.com/wting/autojump" target="_blank" rel="noopener">github-autojump</a></li>
+</ul>
 
       
     </div>
@@ -984,7 +992,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">6k</span>
+    <span title="站点总字数">7k</span>
   
 
   
@@ -993,7 +1001,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">6 分钟</span>
+    <span title="站点阅读时长">7 分钟</span>
   
 </div>
 
