@@ -118,7 +118,7 @@ sudo pip3 install thefuck
 ``` bash
 git clone git://github.com/wting/autojump.git
 cd autojump
-./install.py`
+./install.py
 ```
 
 然后系统提示将如下代码放在`~/.zshrc`中
@@ -132,10 +132,10 @@ autoload -U compinit && compinit -u
 
 # 参考
 
-[Dom_留声机's Blog](https://blog.csdn.net/qq_14824885/article/details/81098091)
-[askDing's Blog](https://www.cnblogs.com/mitnick/p/6270384.html)
-[github-thefuck](https://github.com/nvbn/thefuck)
-[github-zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-[github-zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-[github-zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
-[github-autojump](https://github.com/wting/autojump)
+- [Dom_留声机's Blog](https://blog.csdn.net/qq_14824885/article/details/81098091)
+- [askDing's Blog](https://www.cnblogs.com/mitnick/p/6270384.html)
+- [github-thefuck](https://github.com/nvbn/thefuck)
+- [github-zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+- [github-zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+- [github-zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
+- [github-autojump](https://github.com/wting/autojump)

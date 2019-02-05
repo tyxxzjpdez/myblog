@@ -170,6 +170,79 @@ Markdown
 经过试验，在hexo下并不支持定义型列表，所以此处只能贴一张效果图：
 ![效果图](/myblog/images/Local-Gallery/markdown-definitionList.png "定义型列表")
 
+### 引用
+#### 单层引用
+**形式：**
+`< something...`
+**语法说明：**
+引用需要在被引用的文本前加上>符号
+**代码：**
+``` md
+> 这是一个有两段文字的引用
+> 无意义的占行文字1.
+> 无意义的占行文字2.
+>
+> 无意义的占行文字3.
+> 无意义的占行文字4.
+```
+**显示效果：**
+{%note default no-icon%}
+> 这是一个有两段文字的引用
+> 无意义的占行文字1.
+> 无意义的占行文字2.
+>
+> 无意义的占行文字3.
+> 无意义的占行文字4.
+{%endnote%}
+#### 多层引用（引用的嵌套）
+**形式：**
+`< something1...`
+`<< something2...`
+`<<< something3...`
+**语法说明：**
+区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的`>`
+**代码：**
+``` md
+> 请问 Markdwon 怎么用？ - 小白
+>> 自己看教程！ - 愤青
+>>> 教程在哪？ - 小白
+```
+**显示效果：**
+{%note default no-icon%}
+> 请问 Markdwon 怎么用？ - 小白
+>> 自己看教程！ - 愤青
+>>> 教程在哪？ - 小白
+{%endnote%}
+
+### 插入图片
+图片的创建方式与超链接相似，而且和超链接一样也有两种写法，**行内式**和**参考式**写法。
+**语法说明：**语法中图片`Alt`的意思是如果图片因为某些原因不能显示，就用定义的图片`Alt`文字来代替图片。 图片`Title`则和链接中的`Title`一样，表示鼠标悬停与图片上时出现的文字。`Alt`和`Title`都不是必须的，可以省略，但建议写上。
+#### 行内式
+**形式：**
+`![图片Alt](图片地址 "图片Title")`
+**代码：**
+``` md
+![美丽花儿](http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg "美丽花儿")
+```
+**显示效果：**
+{%note default no-icon%}
+![美丽花儿](http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg "美丽花儿")
+{%endnote%}
+#### 参考式
+**形式：**
+`![图片Alt][标记]`(在文档要插入图片的地方)
+`[标记]:图片地址 “Title”`(在文档后面其他位置)
+**代码：**
+``` md
+![美丽花儿][flower]
+[flower]:http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg  "美丽花儿"
+```
+**显示效果：**
+{%note default no-icon%}
+![美丽花儿][flower]
+[flower]:http://ww2.sinaimg.cn/large/56d258bdjw1eugeubg8ujj21kw16odn6.jpg  "美丽花儿"
+{%endnote%}
+
 ### 字体颜色与字体背景颜色
 大致的策略是字体颜色使用font标签(**可内联**)，背景色使用一行一列的表格进行填充（**不可内联**）
 **更新：现在可以使用&lt;span&gt;标签加上style的声明同时实现前景与背景颜色的修改**
