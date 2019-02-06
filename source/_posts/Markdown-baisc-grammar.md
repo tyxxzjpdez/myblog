@@ -260,22 +260,218 @@ Markdown
 <table><tr><td bgcolor=PowderBlue>这里的背景色是：PowderBlue，  十六进制颜色值： #B0E0E6，rgb(176, 224, 230)</td></tr></table>
 {% endnote %}
 
+### 注脚
+**形式：**
+`脚注名字[^注脚名字]`
+**语法说明：**
+在需要添加注脚的文字后加上以上代码,称为加注。 然后在文本的任意位置(一般在最后)添加脚注，脚注前必须有对应的脚注名字。
+**代码：**
+```md
+使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。
+[^1]: Markdown是一种纯文本标记语言
+[^2]: HyperText Markup Language 超文本标记语言
+[^Le]: 开源笔记平台，支持Markdown和笔记直接发为博文
+```
+**显示效果：**
+{%note default no-icon%}
+使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。
+[^1]: Markdown是一种纯文本标记语言
+[^2]: HyperText Markup Language 超文本标记语言
+[^Le]: 开源笔记平台，支持Markdown和笔记直接发为博文
+{%endnote%}
+
+### 表格
+**形式：**
+形式较复杂，详细看下方的语法说明以及代码与效果
+**语法说明：**
+- 不管是哪种方式，第一行为表头，第二行分隔表头和主体部分，第三行开始每一行为一个表格行。
+- 列与列之间用管道符|隔开。原生方式的表格每一行的两边也要有管道符。
+- 第二行还可以为不同的列指定对齐方向。默认为左对齐，在-右边加上:就右对齐。
+
+**代码1：**
+```md
+简单方式写表格：
+
+学号|姓名|分数
+-|-|-
+小明|男|75
+小红|女|79
+小陆|男|92
+```
+**显示效果1：**
+{%note default no-icon%}
+简单方式写表格：
+
+学号|姓名|分数
+-|-|-
+小明|男|75
+小红|女|79
+小陆|男|92
+{%endnote%}
+**代码2：**
+```md
+原生方式写表格：
+
+| 学号 | 姓名 | 分数 |
+| ---- | ---- | ---- |
+| 小明 | 男   | 75   |
+| 小红 | 女   | 79   |
+| 小陆 | 男   | 92   |
+```
+**显示效果2：**
+{%note default no-icon%}
+原生方式写表格：
+
+| 学号 | 姓名 | 分数 |
+| ---- | ---- | ---- |
+| 小明 | 男   | 75   |
+| 小红 | 女   | 79   |
+| 小陆 | 男   | 92   |
+{%endnote%}
+**代码3：**
+```md
+为表格第二列指定方向：
+
+| 产品             |     价格 |
+| ---------------- | -------: |
+| Leanote 高级账号 |  60元/年 |
+| Leanote 超级账号 | 120元/年 |
+```
+**显示效果3：**
+{%note default no-icon%}
+为表格第二列指定方向：
+
+| 产品             |     价格 |
+| ---------------- | -------: |
+| Leanote 高级账号 |  60元/年 |
+| Leanote 超级账号 | 120元/年 |
+{%endnote%}
+
+### LaTeX 公式
+注意：需要在Font Matter加入`mathjax: true`
+#### $ 表示行内公式
+**代码：**
+```md
+质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
+```
+**显示效果：**
+{%note default no-icon%}
+质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
+{%endnote%}
+#### $$ 表示整行公式
+**代码：**
+```md
+$$\sum_{i=1}^n a_i=0$$
+$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
+$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
+$$\begin{bmatrix}
+  {a_{11}}&{a_{12}}&{\cdots}&{a_{1n}}\\
+  {a_{21}}&{a_{22}}&{\cdots}&{a_{2n}}\\
+  {\vdots}&{\vdots}&{\ddots}&{\vdots}\\
+  {a_{m1}}&{a_{m2}}&{\cdots}&{a_{mn}}\\
+\end{bmatrix}$$
+$$\begin{array}{c|lll}
+  {↓}&{a}&{b}&{c}\\
+  \hline
+  {R_1}&{c}&{b}&{a}\\
+  {R_2}&{b}&{c}&{c}\\
+\end{array}$$
+```
+**显示效果：**
+{%note default no-icon%}
+$$\sum_{i=1}^n a_i=0$$
+$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
+$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
+$$\begin{bmatrix}
+  {a_{11}}&{a_{12}}&{\cdots}&{a_{1n}}\\
+  {a_{21}}&{a_{22}}&{\cdots}&{a_{2n}}\\
+  {\vdots}&{\vdots}&{\ddots}&{\vdots}\\
+  {a_{m1}}&{a_{m2}}&{\cdots}&{a_{mn}}\\
+\end{bmatrix}$$
+$$\begin{array}{c|lll}
+  {↓}&{a}&{b}&{c}\\
+  \hline
+  {R_1}&{c}&{b}&{a}\\
+  {R_2}&{b}&{c}&{c}\\
+\end{array}$$
+{%endnote%}
+
+访问[MathJax](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)参考更多使用方法。
+
+### 分割线
+**语法说明：**
+你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：
+**代码：**
+```md
+一些东西
+***
+另外一些东西
+```
+**显示效果：**
+{%note default no-icon%}
+一些东西
+***
+另外一些东西
+{%endnote%}
+虽然说在标准的语法中有好多分割线表示方法，但强烈推荐只使用一种作为习惯。
+
+### 代码
+插入程序代码的方式有两种，一种是利用缩进(Tab), 另一种是利用”`”符号（一般在ESC键下方）包裹代码。
+**语法说明：**
+- 插入行内代码，即插入一个单词或者一句代码的情况，使用\`code\`这样的形式插入。
+- 插入多行代码，可以使用缩进或者\`code\`,具体看示例。
+- 注意缩进式插入前方必须有空行
+
+#### 行内式
+**代码：**
+```md
+C语言里的函数`scanf()`怎么使用？
+```
+**显示效果：**
+{%note default no-icon%}
+C语言里的函数`scanf()`怎么使用？
+{%endnote%}
+
+#### 缩进式
+**代码：**
+```c
+  #include <stdio.h>
+  int main(void)
+  {
+      printf("Hello world\n");
+  }
+```
+**显示效果：**
+
+	#include<stdio.h>
+	int main(){
+		printf("123");
+		return 0;
+	}
+
+#### 用三个”`”包裹多行代码
+注意：此处在代码中出现了反引号，解决方案在[这里](https://www.jianshu.com/p/d6ca2d4dfaab)，简单来说就是外层反引号由三个变成四个
+**代码：**
+````md
+```c
+#include <stdio.h>
+int main(void)
+{
+  printf("Hello world\n");
+}
+```
+````
+**显示效果：**
+```c
+#include <stdio.h>
+int main(void)
+{
+  printf("Hello world\n");
+}
+```
+
 ### 特殊字符转义
 
 ##参考
 [LixT's Blog](https://www.lixint.me/markdown.html)
 [ThitjerShore's Blog](https://blog.csdn.net/thither_shore/article/details/52181464)
-{% note default no-icon %}
-    $$\begin{bmatrix}
-        {a_{11}}&{a_{12}}&{\cdots}&{a_{1n}}\\
-        {a_{21}}&{a_{22}}&{\cdots}&{a_{2n}}\\
-        {\vdots}&{\vdots}&{\ddots}&{\vdots}\\
-        {a_{m1}}&{a_{m2}}&{\cdots}&{a_{mn}}\\
-    \end{bmatrix}$$
-    $$\begin{array}{c|lll}
-    {↓}&{a}&{b}&{c}\\
-    \hline
-    {R_1}&{c}&{b}&{a}\\
-    {R_2}&{b}&{c}&{c}\\
-    \end{array}$$
-{% endnote %}
