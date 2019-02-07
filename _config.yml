@@ -99,3 +99,10 @@ search:
   field: post
   format: html
   limit: 10000
+
+# Hexo下的流程图
+## Docs: https://github.com/bubkoo/hexo-filter-flowchart
+flowchart:
+  # raphael:   # optional, the source url of raphael.js
+  # flowchart: # optional, the source url of flowchart.js
+  options: # options used for `drawSVG`

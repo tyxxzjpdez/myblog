@@ -433,6 +433,7 @@ C语言里的函数`scanf()`怎么使用？
 {%endnote%}
 
 #### 缩进式
+在有些编辑器(比如默认设置的vscode)当中一般都用soft tab实现tab，这是由若干（看编辑器的配置）space组成的，并不是真的tab，所以很多时候你会发现按了tab键，代码却没有在markdown中变成代码块（详细资料见[这里](https://www.jianshu.com/p/9b76caae30f5)）
 **代码：**
 ```c
   #include <stdio.h>
@@ -470,8 +471,117 @@ int main(void)
 }
 ```
 
+### 流程图
+Markdown语法是支持流程图、序列图的。但是我们需要安装一个插件来实现。
+插件地址：<https://github.com/bubkoo/hexo-filter-flowchart>
+#### 安装
+先进入你的博客根目录，然后输入以下命令
+```bash
+npm install --save hexo-filter-flowchart
+```
+#### 使用
+打开你的hexo博客的**站点配置文件**_config.yml 。
+然后找一个位置，把下面的代码复制进去，注意对齐和缩进。这是为了方便自定义该插件的配置选项，我们只需要修改以下少量代码就可成功配置，而不必去烦乱的代码里修改插件的配置文件。(当然即使你不去博客的配置文件中进行配置，也是可以正常使用的。如果你不会添加，请忽略此步)
+```yml
+flowchart:
+  # raphael:   # optional, the source url of raphael.js
+  # flowchart: # optional, the source url of flowchart.js
+  options: # options used for `drawSVG`
+```
+我们可以根据自己的使用习惯进行修改，默认配置为如下所示。我们同时需要根据该默认配置来自定义配置。
+```yml
+{
+  "raphael": "https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js",
+  "flowchart": "https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js",
+  "options": {
+    "scale": 1,
+    "line-width": 2,
+    "line-length": 50,
+    "text-margin": 10,
+    "font-size": 12
+  }
+}
+```
+#### 测试
+接下来我们可以用markdown语法画一个流程图来测试一下是否已经安装成功。[语法参照](http://flowchart.js.org/)
+**代码：**
+下方代码flow前的\需要**去掉**，我是因为实在不知道怎么取消转为`div`块，所以不得已加了一个反斜杠
+````
+```\flow
+st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
+
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e
+```
+````
+**显示效果：**
+{%note default no-icon%}
+```flow
+st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
+
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e
+```
+{%endnote%}
+
 ### 特殊字符转义
+#### 反斜杠
+该部分转载于[这里](https://www.appinn.com/markdown/)
+Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果（但不用`<em>`标签），你可以在星号的前面加上反斜杠：
+```md
+\*literal asterisks\*
+```
+Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：
+```md
+\   反斜线
+`   反引号
+*   星号
+_   底线
+{}  花括号
+[]  方括号
+()  括弧
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   惊叹号
+```
+#### html转义字符
+点击[这里](http://tool.oschina.net/commons?type=2)查看全部
+以下是部分常用的转义字符：
+
+| 字符 | 十进制 | 转义字符 |
+| ---- | ---- | ---- |
+| " | &amp;#34;   | &amp;quot; |
+| ' | &amp;#39;   | &amp;apos; |
+| & | &amp;#38;   | &amp;amp;   |
+| < | &amp;#60;   | &amp;lt;   |
+| > | &amp;#62;   | &amp;gt;   |
+| 不断开空格(non-breaking space) | &amp;#160;   | &amp;nbsp;   |
 
 ##参考
 [LixT's Blog](https://www.lixint.me/markdown.html)
 [ThitjerShore's Blog](https://blog.csdn.net/thither_shore/article/details/52181464)
+[bingyu's blog](https://www.bingyublog.com/2018/08/22/Hexo%E5%8D%9A%E5%AE%A2%E6%98%BE%E7%A4%BAmarkdown%E6%B5%81%E7%A8%8B%E5%9B%BE/)
