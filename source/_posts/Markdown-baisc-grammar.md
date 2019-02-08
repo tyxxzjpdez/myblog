@@ -396,6 +396,11 @@ $$\begin{array}{c|lll}
 \end{array}$$
 {%endnote%}
 
+#### 一些问题整理（来自网络）
+
+[LaTex字体、符号汇总](https://blog.csdn.net/cclethe/article/details/79022216)
+[LaTeX 加粗](https://blog.csdn.net/yhl_leo/article/details/50997822)
+
 访问[MathJax](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)参考更多使用方法。
 
 ### 分割线
@@ -433,7 +438,7 @@ C语言里的函数`scanf()`怎么使用？
 {%endnote%}
 
 #### 缩进式
-在有些编辑器(比如默认设置的vscode)当中一般都用soft tab实现tab，这是由若干（看编辑器的配置）space组成的，并不是真的tab，所以很多时候你会发现按了tab键，代码却没有在markdown中变成代码块（详细资料见[这里](https://www.jianshu.com/p/9b76caae30f5)）
+在有些编辑器（比如默认设置的vscode）当中一般都用soft tab实现tab，这是由若干（看编辑器的配置）space组成的，并不是真的tab，所以很多时候你会发现按了tab键，代码却没有在markdown中变成代码块（详细资料见[这里](https://www.jianshu.com/p/9b76caae30f5)）
 **代码：**
 ```c
   #include <stdio.h>
