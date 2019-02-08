@@ -400,6 +400,9 @@ $$\begin{array}{c|lll}
 
 [LaTex字体、符号汇总](https://blog.csdn.net/cclethe/article/details/79022216)
 [LaTeX 加粗](https://blog.csdn.net/yhl_leo/article/details/50997822)
+[LaTeX编写分段函数](https://blog.csdn.net/u012428169/article/details/76422845/)
+[Latex中的空格](https://blog.csdn.net/seaskying/article/details/51316607)
+[在LaTeX中，使用argmin，argmax时，设置下标的方法](https://blog.csdn.net/qq_31456593/article/details/77855503)
 
 访问[MathJax](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)参考更多使用方法。
 

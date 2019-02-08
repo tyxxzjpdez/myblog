@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://tyxxzjpdez.github.io/myblog
+url: https://tyxxzjpdez.coding.me/myblog
 root: /myblog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -81,8 +81,8 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/tyxxzjpdez/myblog.git
-  branch: gh-pages
+  repo: https://git.dev.tencent.com/tyxxzjpdez/myblog.git
+  branch: master
 
 # 实现全站及文章字数统计及阅读时长
 ## Docs: https://www.lixint.me/hexo-theme-diy.html
