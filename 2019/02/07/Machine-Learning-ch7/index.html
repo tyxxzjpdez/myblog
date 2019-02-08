@@ -144,7 +144,7 @@
 <meta property="og:description" content="机器学习（周志华）第七章：贝叶斯分类器的总结，主要包含本章脉络整理以及章末代码展示">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://tyxxzjpdez.github.io/images/Local-Gallery/Machine-Learning-ZhouZhihua.jpg">
-<meta property="og:updated_time" content="2019-02-08T04:29:27.612Z">
+<meta property="og:updated_time" content="2019-02-08T09:18:37.551Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习（周志华）-贝叶斯分类器">
 <meta name="twitter:description" content="机器学习（周志华）第七章：贝叶斯分类器的总结，主要包含本章脉络整理以及章末代码展示">
@@ -504,7 +504,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-08 12:29:27" itemprop="dateModified" datetime="2019-02-08T12:29:27+08:00">2019-02-08</time>
+                <time title="修改时间：2019-02-08 17:18:37" itemprop="dateModified" datetime="2019-02-08T17:18:37+08:00">2019-02-08</time>
               
             
           </span>
@@ -573,7 +573,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">362</span>
+                <span title="本文字数">998</span>
               
 
               
@@ -609,7 +609,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/myblog/images/Local-Gallery/Machine-Learning-ZhouZhihua.jpg" rel="gallery_cjrvln1zf0003pzrw0qwe2li4" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="/myblog/images/Local-Gallery/Machine-Learning-ZhouZhihua.jpg" rel="gallery_cjrvzun9p00081vrwy7df201a" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="/myblog/images/Local-Gallery/Machine-Learning-ZhouZhihua.jpg" itemprop="contentUrl">
               </a>
             
@@ -625,8 +625,17 @@
 </blockquote>
 <a id="more"></a>
 <h1 id="脉络整理"><a href="#脉络整理" class="headerlink" title="脉络整理"></a>脉络整理</h1><h2 id="贝叶斯决策论"><a href="#贝叶斯决策论" class="headerlink" title="贝叶斯决策论"></a>贝叶斯决策论</h2><p>假设有$N$种可能的标记，即$\mathcal{Y}={c_1,c_2,…,c_N}$，$\lambda_{ij}$是将一个真实标记为$c_j$的样本误分类为$c_i$所产生的损失，基于后验概率$P(c_i|\boldsymbol{x})$可获得将样本$\boldsymbol{x}$分类为$c_i$所产生的期望损失（expected loss），即在样本$\boldsymbol{x}$上的“条件风险”（conditional risk）</p>
-<script type="math/tex; mode=display">R(c_i|\boldsymbol{x})=\sum_{j=1}^N \lambda_{ij}P(c_j|\boldsymbol{x})</script><p>我们的任务是寻找一个判定准则</p>
-<h1 id="章末练习"><a href="#章末练习" class="headerlink" title="章末练习"></a>章末练习</h1>
+<script type="math/tex; mode=display">R(c_i|\boldsymbol{x})=\sum_{j=1}^N \lambda_{ij}P(c_j|\boldsymbol{x})</script><p>我们的任务是寻找一个判定准则$h:\mathcal{X}\mapsto\mathcal{Y}$以最小化总体风险</p>
+<script type="math/tex; mode=display">R(h)=\mathbb{E}_{\boldsymbol{x}}[R(h(\boldsymbol{x})|\boldsymbol{x})]</script><p>显然，对于每个样本$\boldsymbol{x}$，若$h$能最小化条件风险$R(h(\boldsymbol{x})|\boldsymbol{x})$，则总体风险$R(h)$也将被最小化。这就产生了贝叶斯判定准则（Bayes decision rule）：为最小化总体风险，只需在每个样本上选择那个能使条件风险$R(c|\boldsymbol{x})$最小化的类别标记，即</p>
+<script type="math/tex; mode=display">h^*(\boldsymbol{x})=\mathop{\arg\min}_{c\in \mathcal{Y}} R(c|\boldsymbol{x})</script><p>此时，$h^*$称为贝叶斯最优分类器（Bayes optimal classifier），与之对应的总体风险$R(h^*)$称为贝叶斯风险(Bayes risk)，$1-R(h^*)$反映了分类器所能达到的最好性能，即通过机器学习所能产生的模型精度的理论上限。</p>
+<p>而若目标是最小化分类错误,也即$\lambda_{ij}$定义为</p>
+<script type="math/tex; mode=display">\lambda_{ij}=
+\left\{
+\begin{array}{rcl}
+0, & & {if\ i==j}\\
+1, & & {otherwise}
+\end{array}
+\right.</script><h1 id="章末练习"><a href="#章末练习" class="headerlink" title="章末练习"></a>章末练习</h1>
       
     </div>
 
@@ -946,7 +955,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">14k</span>
+    <span title="站点总字数">15k</span>
   
 
   
@@ -955,7 +964,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">13 分钟</span>
+    <span title="站点阅读时长">14 分钟</span>
   
 </div>
 

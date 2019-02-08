@@ -144,7 +144,7 @@
 <meta property="og:description" content="第一篇正式博客，因为对Markdown语法不熟悉，就打算专门写个关于Markdown语法的博客注意：本博客仅仅是总结其他博客的用法，末尾会给出所有的链接">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://tyxxzjpdez.github.io/images/Local-Gallery/markdown.jpg">
-<meta property="og:updated_time" content="2019-02-08T05:08:42.774Z">
+<meta property="og:updated_time" content="2019-02-08T09:23:12.007Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown基本语法">
 <meta name="twitter:description" content="第一篇正式博客，因为对Markdown语法不熟悉，就打算专门写个关于Markdown语法的博客注意：本博客仅仅是总结其他博客的用法，末尾会给出所有的链接">
@@ -502,7 +502,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-08 13:08:42" itemprop="dateModified" datetime="2019-02-08T13:08:42+08:00">2019-02-08</time>
+                <time title="修改时间：2019-02-08 17:23:12" itemprop="dateModified" datetime="2019-02-08T17:23:12+08:00">2019-02-08</time>
               
             
           </span>
@@ -600,7 +600,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/myblog/images/Local-Gallery/markdown.jpg" rel="gallery_cjrvln1zl0007pzrwrtfd1fob" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="/myblog/images/Local-Gallery/markdown.jpg" rel="gallery_cjrvzun9800001vrwzyzo4v75" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="/myblog/images/Local-Gallery/markdown.jpg" itemprop="contentUrl">
               </a>
             
@@ -624,7 +624,7 @@
 <h4 id="参考式"><a href="#参考式" class="headerlink" title="参考式"></a>参考式</h4><p>参考式超链接一般用在学术论文上面，或者另一种情况，如果某一个链接在文章中多处使用，那么使用引用 的方式创建链接将非常好，它可以让你对链接进行统一的管理。<br><strong>形式：</strong><br><code>[链接文字][链接标记]</code><br><strong>语法说明：</strong><br>参考式链接分为两部分：链接文字与链接标记。<br>对于链接标记，在文本的任意位置添加[链接标记]:链接地址 “链接标题”，注意链接地址与链接标题前有一个空格。<br>对于链接文字，就是显示的文字，而如果链接文字本身可以做为链接标记，你也可以写成[链接文字][]，而相应的链接标记可以变成[链接文字]：链接地址的形式，见代码的最后一行。<br><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">我经常去的几个网站[Google][1]、[Leanote][2]以及[自己的博客][3]</span><br><span class="line">[Leanote 笔记][2]是一个不错的[网站][]。</span><br><span class="line">[1]:http://www.google.com &quot;Google&quot;</span><br><span class="line">[2]:http://www.leanote.com &quot;Leanote&quot;</span><br><span class="line">[3]:https://tyxxzjpdez.github.io/myblog &quot;tyxxzjpdez&apos;s Blog&quot;</span><br><span class="line">[网站]:http://http://blog.leanote.com</span><br></pre></td></tr></table></figure></p>
 <p><strong>显示效果：</strong><br><div class="note default no-icon"><p>我经常去的几个网站<a href="http://www.google.com" title="Google" target="_blank" rel="noopener">Google</a>、<a href="http://www.leanote.com" title="Leanote" target="_blank" rel="noopener">Leanote</a>以及<a href="https://tyxxzjpdez.github.io/myblog" title="tyxxzjpdez&#39;s Blog">自己的博客</a><br><a href="http://www.leanote.com" title="Leanote" target="_blank" rel="noopener">Leanote 笔记</a>是一个不错的<a href="http://http://blog.leanote.com" target="_blank" rel="noopener">网站</a>。</p></div></p>
 <h4 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h4><p>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用&lt;&gt;包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样。<br><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;https://tyxxzjpdez.github.io/myblog/&gt;</span><br><span class="line">&lt;address@example.com&gt;</span><br></pre></td></tr></table></figure></p>
-<p><strong>显示效果：</strong><br><div class="note default no-icon"><p><a href="https://tyxxzjpdez.github.io/myblog/">https://tyxxzjpdez.github.io/myblog/</a><br><a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#58;&#x61;&#x64;&#100;&#x72;&#x65;&#115;&#x73;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#x65;&#46;&#x63;&#x6f;&#x6d;">&#x61;&#x64;&#100;&#x72;&#x65;&#115;&#x73;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#x65;&#46;&#x63;&#x6f;&#x6d;</a></p></div></p>
+<p><strong>显示效果：</strong><br><div class="note default no-icon"><p><a href="https://tyxxzjpdez.github.io/myblog/">https://tyxxzjpdez.github.io/myblog/</a><br><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#97;&#x64;&#x64;&#x72;&#101;&#115;&#115;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;">&#97;&#x64;&#x64;&#x72;&#101;&#115;&#115;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#108;&#x65;&#46;&#99;&#x6f;&#x6d;</a></p></div></p>
 <h4 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h4><p>网页中，锚点其实就是页内超链接，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。<strong>注意：Markdown 只支持在标题后插入锚点，其它地方无效。</strong><br><strong>形式：</strong><br><code>### 目录{#index}</code><br><code>跳转到[目录](#index)</code><br><strong>语法说明：</strong><br>在你准备跳转到的指定标题后插入锚点{#标记}，然后在文档的其它地方写上连接到锚点的链接。<strong>注意此项不能直接在Hexo博客中使用，Hexo博客会将{}中的内容进行渲染，从而引起未知错误(此时可使用{%raw%}{%endraw%}取消渲染)。</strong><br><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">跳转到[超链接](#超链接)</span><br></pre></td></tr></table></figure></p>
 <p><strong>显示效果：</strong><br><div class="note default no-icon"><p>跳转到<a href="#超链接">超链接</a></p></div></p>
 <h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><p>使用<code>*,+,-</code>来表示无序列表。<br><strong>代码：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- 无序列表项 一</span><br><span class="line">- 无序列表项 二</span><br><span class="line">- 无序列表项 三</span><br></pre></td></tr></table></figure></p>
@@ -661,7 +661,7 @@
 <p><strong>显示效果：</strong><br><div class="note default no-icon"><p>质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。</p></div></p>
 <h4 id="表示整行公式"><a href="#表示整行公式" class="headerlink" title="$$ 表示整行公式"></a>$$ 表示整行公式</h4><p><strong>代码：</strong><br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$$\sum<span class="emphasis">_&#123;i=1&#125;^n a_</span>i=0$$</span><br><span class="line">$$f(x<span class="emphasis">_1,x_</span>x,\ldots,x<span class="emphasis">_n) = x_</span>1^2 + x<span class="emphasis">_2^2 + \cdots + x_</span>n^2 $$</span><br><span class="line">$$\sum^&#123;j-1&#125;<span class="emphasis">_&#123;k=0&#125;&#123;\widehat&#123;\gamma&#125;_</span>&#123;kj&#125; z_k&#125;$$</span><br><span class="line">$$\begin&#123;bmatrix&#125;</span><br><span class="line">  &#123;a<span class="emphasis">_&#123;11&#125;&#125;&amp;&#123;a_</span>&#123;12&#125;&#125;&amp;&#123;\cdots&#125;&amp;&#123;a_&#123;1n&#125;&#125;\\</span><br><span class="line">  &#123;a<span class="emphasis">_&#123;21&#125;&#125;&amp;&#123;a_</span>&#123;22&#125;&#125;&amp;&#123;\cdots&#125;&amp;&#123;a_&#123;2n&#125;&#125;\\</span><br><span class="line">  &#123;\vdots&#125;&amp;&#123;\vdots&#125;&amp;&#123;\ddots&#125;&amp;&#123;\vdots&#125;\\</span><br><span class="line">  &#123;a<span class="emphasis">_&#123;m1&#125;&#125;&amp;&#123;a_</span>&#123;m2&#125;&#125;&amp;&#123;\cdots&#125;&amp;&#123;a_&#123;mn&#125;&#125;\\</span><br><span class="line">\end&#123;bmatrix&#125;$$</span><br><span class="line">$$\begin&#123;array&#125;&#123;c|lll&#125;</span><br><span class="line">  &#123;↓&#125;&amp;&#123;a&#125;&amp;&#123;b&#125;&amp;&#123;c&#125;\\</span><br><span class="line">  \hline</span><br><span class="line">  &#123;R_1&#125;&amp;&#123;c&#125;&amp;&#123;b&#125;&amp;&#123;a&#125;\\</span><br><span class="line">  &#123;R_2&#125;&amp;&#123;b&#125;&amp;&#123;c&#125;&amp;&#123;c&#125;\\</span><br><span class="line">\end&#123;array&#125;$$</span><br></pre></td></tr></table></figure></p>
 <p><strong>显示效果：</strong><br><div class="note default no-icon"><script type="math/tex; mode=display">\sum_{i=1}^n a_i=0</script><script type="math/tex; mode=display">f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2</script><script type="math/tex; mode=display">\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}</script><script type="math/tex; mode=display">\begin{bmatrix}  {a_{11}}&{a_{12}}&{\cdots}&{a_{1n}}\\  {a_{21}}&{a_{22}}&{\cdots}&{a_{2n}}\\  {\vdots}&{\vdots}&{\ddots}&{\vdots}\\  {a_{m1}}&{a_{m2}}&{\cdots}&{a_{mn}}\\\end{bmatrix}</script><script type="math/tex; mode=display">\begin{array}{c|lll}  {↓}&{a}&{b}&{c}\\  \hline  {R_1}&{c}&{b}&{a}\\  {R_2}&{b}&{c}&{c}\\\end{array}</script></div></p>
-<h4 id="一些问题整理（来自网络）"><a href="#一些问题整理（来自网络）" class="headerlink" title="一些问题整理（来自网络）"></a>一些问题整理（来自网络）</h4><p><a href="https://blog.csdn.net/cclethe/article/details/79022216" target="_blank" rel="noopener">LaTex字体、符号汇总</a><br><a href="https://blog.csdn.net/yhl_leo/article/details/50997822" target="_blank" rel="noopener">LaTeX 加粗</a></p>
+<h4 id="一些问题整理（来自网络）"><a href="#一些问题整理（来自网络）" class="headerlink" title="一些问题整理（来自网络）"></a>一些问题整理（来自网络）</h4><p><a href="https://blog.csdn.net/cclethe/article/details/79022216" target="_blank" rel="noopener">LaTex字体、符号汇总</a><br><a href="https://blog.csdn.net/yhl_leo/article/details/50997822" target="_blank" rel="noopener">LaTeX 加粗</a><br><a href="https://blog.csdn.net/u012428169/article/details/76422845/" target="_blank" rel="noopener">LaTeX编写分段函数</a><br><a href="https://blog.csdn.net/seaskying/article/details/51316607" target="_blank" rel="noopener">Latex中的空格</a><br><a href="https://blog.csdn.net/qq_31456593/article/details/77855503" target="_blank" rel="noopener">在LaTeX中，使用argmin，argmax时，设置下标的方法</a></p>
 <p>访问<a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax</a>参考更多使用方法。</p>
 <h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p><strong>语法说明：</strong><br>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：<br><strong>代码：</strong><br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">一些东西</span><br><span class="line"><span class="emphasis">***</span></span><br><span class="line">另外一些东西</span><br></pre></td></tr></table></figure></p>
 <p><strong>显示效果：</strong><br><div class="note default no-icon"><p>一些东西</p><hr><p>另外一些东西</p></div><br>虽然说在标准的语法中有好多分割线表示方法，但强烈推荐只使用一种作为习惯。</p>
@@ -1070,7 +1070,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">14k</span>
+    <span title="站点总字数">15k</span>
   
 
   
@@ -1079,7 +1079,7 @@ c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">13 分钟</span>
+    <span title="站点阅读时长">14 分钟</span>
   
 </div>
 
