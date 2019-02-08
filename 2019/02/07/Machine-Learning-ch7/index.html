@@ -139,16 +139,16 @@
 <meta name="keywords" content="Bayes">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器学习（周志华）-贝叶斯分类器">
-<meta property="og:url" content="https://tyxxzjpdez.coding.me/myblog/2019/02/07/Machine-Learning-ch7/index.html">
+<meta property="og:url" content="https://tyxxzjpdez.github.io/myblog/2019/02/07/Machine-Learning-ch7/index.html">
 <meta property="og:site_name" content="tyxxzjpdez&#39;s Blog">
 <meta property="og:description" content="机器学习（周志华）第七章：贝叶斯分类器的总结，主要包含本章脉络整理以及章末代码展示">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://tyxxzjpdez.coding.me/images/Local-Gallery/Machine-Learning-ZhouZhihua.jpg">
-<meta property="og:updated_time" content="2019-02-08T09:18:37.551Z">
+<meta property="og:image" content="https://tyxxzjpdez.github.io/images/Local-Gallery/Machine-Learning-ZhouZhihua.jpg">
+<meta property="og:updated_time" content="2019-02-08T14:52:32.062Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="机器学习（周志华）-贝叶斯分类器">
 <meta name="twitter:description" content="机器学习（周志华）第七章：贝叶斯分类器的总结，主要包含本章脉络整理以及章末代码展示">
-<meta name="twitter:image" content="https://tyxxzjpdez.coding.me/images/Local-Gallery/Machine-Learning-ZhouZhihua.jpg">
+<meta name="twitter:image" content="https://tyxxzjpdez.github.io/images/Local-Gallery/Machine-Learning-ZhouZhihua.jpg">
 
 
 
@@ -157,7 +157,7 @@
 
 
 
-  <link rel="canonical" href="https://tyxxzjpdez.coding.me/myblog/2019/02/07/Machine-Learning-ch7/">
+  <link rel="canonical" href="https://tyxxzjpdez.github.io/myblog/2019/02/07/Machine-Learning-ch7/">
 
 
 
@@ -444,7 +444,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tyxxzjpdez.coding.me/myblog/myblog/2019/02/07/Machine-Learning-ch7/">
+    <link itemprop="mainEntityOfPage" href="https://tyxxzjpdez.github.io/myblog/myblog/2019/02/07/Machine-Learning-ch7/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="tyxxzjpdez">
@@ -504,7 +504,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-08 17:18:37" itemprop="dateModified" datetime="2019-02-08T17:18:37+08:00">2019-02-08</time>
+                <time title="修改时间：2019-02-08 22:52:32" itemprop="dateModified" datetime="2019-02-08T22:52:32+08:00">2019-02-08</time>
               
             
           </span>
@@ -573,7 +573,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">998</span>
+                <span title="本文字数">1.6k</span>
               
 
               
@@ -609,7 +609,7 @@
           
           
             <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox" href="/myblog/images/Local-Gallery/Machine-Learning-ZhouZhihua.jpg" rel="gallery_cjrw27xd600018zrw7q2v7xtz" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
+              <a class="post-gallery-img fancybox" href="/myblog/images/Local-Gallery/Machine-Learning-ZhouZhihua.jpg" rel="gallery_cjrw6maw40001uvrwu2pypn96" itemscope="" itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="/myblog/images/Local-Gallery/Machine-Learning-ZhouZhihua.jpg" itemprop="contentUrl">
               </a>
             
@@ -635,7 +635,18 @@
 0, & & {if\ i==j}\\
 1, & & {otherwise}
 \end{array}
-\right.</script><h1 id="章末练习"><a href="#章末练习" class="headerlink" title="章末练习"></a>章末练习</h1>
+\right.</script><p>那么此时的贝叶斯最优分类器为</p>
+<script type="math/tex; mode=display">h^*(\boldsymbol{x})=\mathop{\arg\max}_{c\in \mathcal{Y}}P(c|\boldsymbol{x})</script><p>即对每个样本$\boldsymbol{x}$，选择能使后验概率$P(c|\boldsymbol{x})$最大的类别标记。那么，显然地，接下来的重点问题就是如何获得后验概率。然而，在现实任务中这通常难以直接获得。从这个角度讲，机器学习所要实现的是基于有限的训练样本尽可能准确地估计出后验概率$P(c|\boldsymbol{x})$。大体来说，主要有两种策略<sup><a href="#fn_1" id="reffn_1">1</a></sup>：</p>
+<ul>
+<li>给定$\boldsymbol{x}$，可通过直接建模$P(c|\boldsymbol{x})$来预测$c$，这样得到的是“判别式模型”（discriminative models）</li>
+<li>也可先对联合概率分布$P(c|\boldsymbol{x})$建模，然后由此获得$P(c|\boldsymbol{x})$，这样得到的是“生成式模型”（generative models）</li>
+</ul>
+<p>在贝叶斯方法中，我们使用生成式模型，而对于生成式模型，必然考虑</p>
+<script type="math/tex; mode=display">P(c|\boldsymbol{x})=\frac{P(\boldsymbol{x},c)}{P(\boldsymbol{x})}</script><p>再基于</p>
+<h1 id="章末练习"><a href="#章末练习" class="headerlink" title="章末练习"></a>章末练习</h1><blockquote id="fn_1">
+<sup>1</sup>. 关于两种策略：判别式模型与生成式模型，点击<a href="https://www.cnblogs.com/fanyabo/p/4067295.html" target="_blank" rel="noopener">这里</a>查看更多<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#8617;</a>
+</blockquote>
+
       
     </div>
 
@@ -680,7 +691,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://tyxxzjpdez.coding.me/myblog/2019/02/07/Machine-Learning-ch7/" title="机器学习（周志华）-贝叶斯分类器">https://tyxxzjpdez.coding.me/myblog/2019/02/07/Machine-Learning-ch7/</a>
+    <a href="https://tyxxzjpdez.github.io/myblog/2019/02/07/Machine-Learning-ch7/" title="机器学习（周志华）-贝叶斯分类器">https://tyxxzjpdez.github.io/myblog/2019/02/07/Machine-Learning-ch7/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -955,7 +966,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">15k</span>
+    <span title="站点总字数">16k</span>
   
 
   
