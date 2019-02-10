@@ -5,6 +5,7 @@ mathjax: true
 date: 2019-02-04 13:59:09
 tags:
   - zsh
+  - Linux
 categories:
   - Linux
 photos:
@@ -92,6 +93,11 @@ sudo pip3 install thefuck
 配置方法：
 `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 然后在`~/.zshrc`中的`plugins`加入`zsh-autosuggestions`这一项就好
+
+tips：
+
+- run-help 可以查看zsh自身的命令
+- 如果只想接受部分字符串，可以使用zsh的forward-word键（所有按键都可以使用`blindkey -L`查看，`^[f`表示`Alt/Esc+f`）
 
 ## zsh-syntax-highlighting
 

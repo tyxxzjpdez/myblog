@@ -403,6 +403,7 @@ $$\begin{array}{c|lll}
 [LaTeX编写分段函数](https://blog.csdn.net/u012428169/article/details/76422845/)
 [Latex中的空格](https://blog.csdn.net/seaskying/article/details/51316607)
 [在LaTeX中，使用argmin，argmax时，设置下标的方法](https://blog.csdn.net/qq_31456593/article/details/77855503)
+[Latex 公式换行问题（换行，等号对齐）](https://blog.csdn.net/leichaoaizhaojie/article/details/53463598)
 
 访问[MathJax](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)参考更多使用方法。
 

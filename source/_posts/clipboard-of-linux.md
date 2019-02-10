@@ -5,6 +5,7 @@ mathjax: true
 date: 2019-02-06 16:51:36
 tags:
   - clipboard
+  - Linux
 categories:
   - Linux
 photos:
