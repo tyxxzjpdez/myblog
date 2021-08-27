@@ -1,0 +1,2 @@
+# myblog
+Only  For Redirection
